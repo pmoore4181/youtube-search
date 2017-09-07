@@ -1,0 +1,46 @@
+<DOCTYPE html>
+    <html lang='en-us'>
+
+    <head>
+        <title>Youtube Search</title>
+        <link rel='stylesheet' href='css/style.css'>
+    </head>
+
+    <body>
+        <div id='container'>
+            <header>
+                <h1>Search<span> The Youtubes</span></h1>
+                <p>Find the vids on the tubers</p>
+            </header>
+            <section>
+
+                <!-- search form -->
+                <form id='searchform' name='search-form' onsubmit='return search()'>
+                    <div class='field-container'>
+                        <input type='search' id='query' class='search-field' placeholder='Search youtubes here'>
+                        <input type='submit' name='searchbutton' id='searchbutton' value=''>
+                    </div>
+                </form>
+
+                <!-- list of result videos -->
+                <ul id='results'>
+                </ul>
+
+                <!-- next / previous page buttons -->
+                <div id='buttons'>
+                </div>
+
+            </section>
+
+            <footer>
+                <p>Youtubes Search</p>
+            </footer>
+
+        </div>
+        <!-- JQuery CDN -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Project JS Script -->
+        <script src='js/script.js'></script>
+    </body>
+
+    </html>
